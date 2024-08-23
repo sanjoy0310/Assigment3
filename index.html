@@ -29,7 +29,7 @@
                 <div class="flex items-center">
                     <button
                     class=" flex items-center space-x-1 
-                    py-2 bg-lime-400 hover:bg-lime-500
+                    py-2 bg-lime-500 hover:bg-lime-600
                     text-gray-700 font-bold  rounded-3xl p-2.5">
                     <span>Book Consult</span><span><img src="icon/arrow-up-right-01.png" alt=""></span>
                 </button>
@@ -48,7 +48,7 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-4">A barn house of this design has a striking appearance</h2>
             <p class="text-lg text-gray-600 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>  
           </div>
-          <div class="w-full">
+          <div class="w-full max-sm:w-11/12 m-auto">
             <button class="w-full sm:w-90% md:w-auto flex items-center justify-center space-x-2 py-2 mx-auto bg-lime-300 text-black rounded-3xl hover:bg-lime-400 font-bold p-2.5">
               <span>View Details</span>
               <span><img src="icon/arrow-up-right-01 (1).png" alt=""></span>
@@ -56,11 +56,9 @@
           </div>
           <!--About-->
           <section class="py-16 bg-gray-50 mt-5">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-16">
+            <img class="ml-40 max-sm:hidden"src="assets/Vector.png" alt="">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-16 ">
               <div class="lg:w-1/2 text-left max-sm:text-center ">
-                <div class="max-sm:hidden">
-                  <img src="assets/Vector.png" alt="">
-                </div>
                
                 <button class="flex items-center px-4 py-2 bg-white text-gray-600 rounded-full shadow-md hover:bg-gray-50 space-x-2 mb-2.5 max-sm:m-auto">
                   <span><img src="icon/Group 1.png" alt=""></span>
@@ -124,19 +122,75 @@
                   <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
               <div class="bg-blue-300 p-6 rounded-lg shadow-md text-left">
-                
                   <img src="assets/budget-planning.png" alt="">
-
                   <h3 class="text-xl font-semibold text-gray-800 mb-4">Budget Planning</h3>
                   <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
               </div>
           </div>
       </div>
   </section>
-    </main>
-    <footer>
+  <!-- Discuss project-->
+  <section class=" p-3 sm: w-11/12 m-auto">
+    <div class="max-w-4xl mx-auto text-center">
+      
+      <div class="mb-8">
+          <button class="flex items-center justify-center px-4 py-2 bg-lime-300 text-gray-800 rounded-full shadow-md hover:bg-lime-400 mx-auto space-x-2 mb-4">
+              <span><img src="icon/Group 1.png" alt=""></span>
+            <span class="text-sm font-semibold">Let's Connect</span>
+          </button>
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Let's Discuss Next Project</h2>
+          <p class="text-gray-600 max-w-lg mx-auto">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+      </div>
 
-    </footer>
+      <form class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
+              <input type="text" placeholder="First Name*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
+              <input type="text" placeholder="Last Name*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
+              <input type="text" placeholder="Phone Number*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
+              <input type="email" placeholder="Email Number*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
+          </div>
+          <textarea placeholder="Write your message here" class="p-4 rounded-xl bg-white border border-gray-300 focus:outline-none focus:border-lime-300 w-full h-40 "></textarea>
+
+      
+          <button class="w-full sm:w-full bg-lime-500 text-black font-semibold rounded-full py-3 px-8 hover:bg-lime-600 transition flex items-center justify-center space-x-2 mx-auto">
+              <span>Send Mail</span>
+              <img src="icon/arrow-up-right-01.png" alt="" class="w-5 h-5">
+          </button>
+      </form>
+  </div>
+  </section>
+    </main>
+    <footer class="bg-gray-900 py-8  ">
+      <div class="max-w-4xl mx-auto text-center  text-white">
+        
+          <div class="mb-6">
+             <div class="flex space-x-1 justify-center">
+              <img class="h-6 mt-1.5"src="icon/arrow-up-right-01 (1).png" alt="">
+              <h3 class="text-2xl font-bold mb-2">Rinterio</h3>
+             </div>
+              <p class="text-gray-400 text-sm max-sm:w-11/12 m-auto">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+          </div>
+
+          
+          <div class="flex justify-center  space-x-6 mb-6 max-sm:flex-col ">
+              <a class="max-sm:ml-5"href="" >Home</a>
+              <a href="" >Services</a>
+              <a href="" >Portfolio</a>
+              <a href="" >Blogs</a>
+              <a href="" >Contact Us</a>
+          </div>
+
+          
+          <button class=" m-auto px-8 py-3 bg-lime-500 text-black font-bold rounded-full shadow-md hover:bg-lime-600 transition flex items-center justify-center space-x-2">
+              <span>Book Consult</span>
+              <img src="icon/arrow-up-right-01.png" alt="" class="w-5 h-5">
+          </button>
+      </div>
+  </footer>
     
 </body>
 </html>
