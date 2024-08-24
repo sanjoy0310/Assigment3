@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment3</title>
-    <script src="https://cdn.tailwindcss.com">
+    <!--font style-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    </script>
+<style>
+  .manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.background-image{
+     
+     background-image: url(./assets/bg.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+</style>
+    <script src="https://cdn.tailwindcss.com">
+</script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 manrope">
     <header class=" w-11/12 m-auto ">
         <nav class="flex justify-between items-center p-6 sm:flex justify-between items-center ">
             <div class="flex items-center">
@@ -54,6 +72,7 @@
               <span><img src="icon/arrow-up-right-01 (1).png" alt=""></span>
             </button>
           </div>
+        </section>
           <!--About-->
           <section class="py-16 bg-gray-50 mt-5">
             <img class="ml-40 max-sm:hidden"src="assets/Vector.png" alt="">
@@ -129,9 +148,86 @@
           </div>
       </div>
   </section>
+  <!--Our Latest Portfolio-->
+  <section>
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <button class="flex m-auto  items-center px-4 py-2 bg-lime-300 text-gray-600 rounded-full shadow-md hover:bg-lime-400 space-x-2 mb-2.5 max-sm:m-auto">
+        <span><img src="icon/Group 1.png" alt=""></span>
+        <span class="text-sm font-semibold">Explore our Latest works</span>
+    </button>
+      <div class="text-center ">
+        
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Latest Portfolio</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.
+        </p>
+      </div>
+    
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 ">
+        <!-- First Row -->
+        <div class="lg:col-span-2 border p-4 rounded-lg shadow-lg flex max-sm:flex-col items-center space-x-5">
+          <img src="assets/img1.png" alt="Commercial 1" class="w-full h-auto object-cover rounded-md mb-4">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Commercial</h3>
+            <p class="text-gray-600 mt-2">
+              The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.
+            </p>
+            <button class="mt-4 bg-white-100 font-bold  rounded-full inline-flex items-center">
+              View Details <span class="ml-2"><img src="icon/arrow-up-right-01 (1).png" alt=""></span>
+            </button>
+          </div>
+        </div>
+        <div class="border p-4 rounded-lg shadow-lg">
+            <img src="assets/img2.png" alt="Commercial 2" class="w-full h-auto object-cover rounded-md mb-4">
+            
+          </div>
+    
+          <div class="border p-4 rounded-lg shadow-lg hidden max-sm:flex">
+            <img src="assets/img5.png" alt="Commercial 3" class="w-full h-auto object-cover rounded-md mb-4">
+            
+          </div>
+      </div>
+    
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10">
+        
+        <!-- Fourth Item -->
+        <div class="border p-4 rounded-lg shadow-lg max-sm:hidden">
+          <img src="assets/img3.png" alt="Commercial 4" class="w-full h-auto object-cover rounded-md mb-4">
+          
+        </div>
+    
+        <!-- Fifth Item -->
+        <div class="border flex max-sm:flex-col items-center space-x-4 p-4 rounded-lg shadow-lg lg:col-span-2">
+          <img src="assets/img4.png" alt="Commercial 5" class="w-full h-auto object-cover rounded-md mb-4">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Commercial</h3>
+            <p class="text-gray-600 mt-2">
+              The barn house captivates with its blend of rustic charm and modern.
+            </p>
+            <button class="mt-4 bg-white-100 font-bold rounded-full inline-flex items-center">
+              View Details <span class="ml-2"><img src="icon/arrow-up-right-01 (1).png" alt=""></span>
+            </button>
+          </div>
+         
+        </div>
+        <div class="border p-4 rounded-lg shadow-lg  hidden max-sm:flex">
+          <img src="assets/img3.png" alt="Commercial 4" class="w-full h-auto object-cover rounded-md mb-4">
+          
+        </div>
+    
+        <!-- Sixth Item -->
+        <div class="border p-4 rounded-lg shadow-lg">
+          <img src="assets/img5.png" alt="Commercial 6" class="w-full h-auto object-cover rounded-md mb-4">
+          
+        </div>
+      </div>
+    </div>
+    
+  </section>
+ 
   <!-- Discuss project-->
-  <section class=" p-3 sm: w-11/12 m-auto">
-    <div class="max-w-4xl mx-auto text-center">
+  <section class="background-image  p-3 ">
+    <div class="max-w-4xl mx-auto text-center  ">
       
       <div class="mb-8">
           <button class="flex items-center justify-center px-4 py-2 bg-lime-300 text-gray-800 rounded-full shadow-md hover:bg-lime-400 mx-auto space-x-2 mb-4">
@@ -144,7 +240,7 @@
           </p>
       </div>
 
-      <form class="space-y-6">
+      <form class="space-y-6 max-sm:w-11/12 mx-auto">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
               <input type="text" placeholder="First Name*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
               <input type="text" placeholder="Last Name*" class="p-4 rounded-full bg-white border border-gray-300 focus:outline-none focus:border-lime-300">
@@ -162,7 +258,7 @@
   </div>
   </section>
     </main>
-    <footer class="bg-gray-900 py-8  ">
+    <footer class="bg-black py-8 mt-5 ">
       <div class="max-w-4xl mx-auto text-center  text-white">
         
           <div class="mb-6">
